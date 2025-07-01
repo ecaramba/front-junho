@@ -13,9 +13,55 @@
             JS -> ES 
         */
 
-        var pessoa = prompt("Digite seu nome");
+        //var pessoa = prompt("Digite seu nome");
 
-        alert("Oi " + pessoa);
+        //alert("Oi " + pessoa);
+
+
+        var nome = 'Edir'; // Texto -> string
+        var idade = 23; // numero -> number -> integer
+        var peso = 34.6; // numero -> float
+        var acordado = true; // boolean
+        
+
+        // JS é intepretado
+        // fracamente tipada
+        // dinamica
+
+        // ex1: Peça um nome e diga quantas letras o nome tem
+        //var nome = prompt("Digite um nome");
+        var tam = nome.length;
+
+        //alert("O nome tem " + tam + " letras");
+
+        // operadores
+        // + soma 
+        // - sub
+        // * mult
+        // / div
+
+        // ex.2 Peça dois numeros e de o resultado da soma
+        //var n1 = prompt("digite o numero 1");
+        //var n2 = prompt("digite o numero 2");
+
+        var res = parseInt(n1) + parseInt(n2);
+
+        //alert("A soma é: " + res);
+        console.log("A soma é: " + res);
+
+        // ex.3 Peça 2 numeros e diga qual deles é o maior
+
+        var n1 = prompt("digite o numero 1");
+        var n2 = prompt("digite o numero 2");
+
+        if (n1 > n2)
+        {
+            console.log(n1 + " é o maior");
+        } else 
+        {
+            console.log(n2 + " é o maior");
+        }
+
 
     </script>
 
