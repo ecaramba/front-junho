@@ -44,14 +44,14 @@
         //var n1 = prompt("digite o numero 1");
         //var n2 = prompt("digite o numero 2");
 
-        var res = parseInt(n1) + parseInt(n2);
+        // var res = parseInt(n1) + parseInt(n2);
 
         //alert("A soma é: " + res);
-        console.log("A soma é: " + res);
+        // console.log("A soma é: " + res);
 
         // ex.3 Peça 2 numeros e diga qual deles é o maior
 
-        var n1 = prompt("digite o numero 1");
+        /* var n1 = prompt("digite o numero 1");
         var n2 = prompt("digite o numero 2");
 
         if (n1 > n2)
@@ -61,7 +61,63 @@
         {
             console.log(n2 + " é o maior");
         }
+        */
+        
+        /*
+            Exercicio 021
+            Faça um Programa que verifique se uma letra 
+            digitada é "F" ou "M". Conforme a letra 
+            escrever: F - Feminino, M - Masculino, Sexo Inválido.
+        */
 
+        var letra = prompt("digite uma letra");
+
+        // > maior
+        // < menor
+        // >= maior ou igual
+        // <= menor ou igual
+        // == igual
+        // != diferente
+        
+        if (letra == "F")
+        {
+            console.log("Feminino");
+        } else if (letra == "M")
+        {
+            console.log("Masculino");
+        } else 
+        {
+            console.log("Sexo Inválido");
+        }
+
+
+        // Ex: peça 3 numeros e diga qual dele é o maior 
+        // e qual é o menor
+        var n1 = prompt("digite o numero 1");
+        var n2 = prompt("digite o numero 2");
+        var n3 = prompt("digite o numero 3");
+
+        // n1 = 3
+        // n2 = 2
+        // n3 = 1
+
+        if (n1 > n2)
+        {
+            if (n1 > n3)
+            {
+                console.log(n1 + " é o maior");
+            } else {
+                console.log(n3 + " é o maior");
+            }
+        } else 
+        {
+            if (n2 > n3)
+            {
+                console.log(n2 + " é o maior");
+            } else {
+                console.log(n3 + " é o maior");
+            }
+        }
 
     </script>
 
