@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de Jquery</title>
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <style>
+        #titulo {
+            color: red;
+        }
+    </style>
+
+    <script>
+        function cor()
+        {
+
+            var cor = $('#cor').val();
+
+            //jQuery('#titulo').css('color', 'blue');
+            $('#titulo').css('color', cor);
+        }
+
+        function mudar()
+        {
+            var cor = $('#cor').val();
+            console.log(this);
+            $(this).css('color', cor);
+        }
+
+        // executa somente depois do documento estar carregado
+        $(document).ready(function(){
+
+            $('h2').click(mudar);
+
+        });
+
+    </script>
+</head>
+<body>
+
+    <h1 id="titulo">Jquery</h1>
+
+    <input type="text" />
+    <input id="cor" type="color" />
+    <button onclick="cor()">Clique</button>
+    
+    <h2>Clique</h2>
+    <h2>Clique</h2>
+    <h2>Clique</h2>
+    <h2>Clique</h2>
+    <h2>Clique</h2>
+
+</body>
+</html>
