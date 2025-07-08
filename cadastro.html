@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadsatro</title>
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="cadastro.js"></script>
+
 </head>
 <body>
 
@@ -15,26 +21,41 @@
         <div class="row mb-3">
             <div class="col-6">
                 <label class="form-label">Nome completo</label>
-                <input class="form-control" type="text" />
+                <input id="nome" class="form-control" type="text" />
+                <div class="invalid-feedback">
+                    Nome é obrigatório
+                </div>
             </div>
             <div class="col-6 mb-3">
                 <label class="form-label">Email</label>
-                <input class="form-control" type="text" />
+                <input id="email" class="form-control" type="text" />
+                <div class="invalid-feedback">
+                    Email é obrigatório
+                </div>
             </div>
             <div class="col-6 mb-3">
                 <label class="form-label">Telefone</label>
-                <input class="form-control" type="text" />
+                <input id="telefone" class="form-control" type="text" />
+                <div class="invalid-feedback">
+                    Telefone é obrigatório
+                </div>
             </div>
             <div class="col-6 mb-3">
                 <label class="form-label">Cidade</label>
-                <select class="form-select">
+                <select id="cidade" class="form-select">
+                    <option></option>
                     <option>Curitiba</option>
                     <option>Maringa</option>
                     <option>São Paulo</option>
                 </select>
+                <div class="invalid-feedback">
+                    Cidade é obrigatório
+                </div>
             </div>
 
-            <div><button class="btn btn-primary">Salvar</button></div>
+            <div>
+                <button id="btn-salvar" class="btn btn-primary">Salvar</button>
+            </div>
         </div>
 
     </div>
